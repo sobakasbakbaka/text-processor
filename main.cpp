@@ -87,9 +87,9 @@ int countInMinLengthLine(const std::vector<std::string>& lines, size_t minLength
 void appendResultsToFile(const std::string& filename, size_t minLength, int startCount, int charCount) {
     std::ofstream outfile(filename, std::ios::app);
     outfile << "\nРезультаты: \n";
-    outfile << "Минимальная длина строки (в символах): " << minLength << "\n";
+    outfile << "Минимальная длина строки: " << minLength << "\n";
     outfile << "Строк, начинающихся с заданной буквы: " << startCount << "\n";
-    outfile << "Количество символов (без пробелов) в самой короткой строке: " << charCount << "\n";
+    outfile << "Количество символов в самой короткой строке: " << charCount << "\n";
     outfile.close();
 }
 
